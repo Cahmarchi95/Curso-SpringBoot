@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Projeto 01</title>
+</head>
+<body>
+
+<table border="1">
+
+    <tbody>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+
+        </tr>
+        <tr th:each="aluno: ${alunosList}">
+            <td th:text="${aluno.name}" />
+            <td th:text="${aluno.email}" />
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
